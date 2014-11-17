@@ -1,0 +1,577 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Credits</title>
+<link rel="stylesheet" type="text/css" href="jquery.sidr.dark.css">
+<link rel="stylesheet" type="text/css" href="bMonday/jplayer.blue.monday.css">
+<style>
+	body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			-ms-touch-action: none;
+		}
+</style>
+<script src="jquery.js"></script>
+ <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+ <!--<script type="text/javascript" src="/js/jplayer.playlist.min.js"></script>-->
+<script src="sidr.js"></script>
+<link  href="fotorama/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="fotorama/fotorama.js"></script> <!-- 16 KB -->
+<script id="sidrManipulation">
+function stopAllJplayers(){
+    $(".jp-jplayer").jPlayer("stop");
+};
+
+function closeAnyRightSidr(){
+	$.sidr('close','sidr-right-art');
+	$.sidr('close','sidr-right-music');
+	$.sidr('close','sidr-right-etc');
+   	//$('#toggleMenu').fadeIn();
+	
+};
+function openLeftSide(){
+	$.sidr('open','sidr-left');
+	//$('#toggleMenu').fadeOut();
+	$('.initialHide').fadeOut();
+};
+
+$(document).ready(function() {
+	
+
+var allSlidrSpeed = 500;
+  $('#left-menu').sidr({
+      name: 'sidr-left',
+      side: 'left',
+      speed: allSlidrSpeed 
+    });
+  $('#right-menu-art').sidr({
+      name: 'sidr-right-art',
+      side: 'right',
+      speed: allSlidrSpeed,
+	  displace: false
+    });
+    $('#right-menu-music').sidr({
+      name: 'sidr-right-music',
+      side: 'right',
+      speed: allSlidrSpeed,
+	  displace: false
+    });
+    $('#right-menu-etc').sidr({
+      name: 'sidr-right-etc',
+      side: 'right',
+      speed: allSlidrSpeed,
+	  displace: false
+    });
+
+  $.sidr('open','sidr-left');
+  
+  $('#sprites').click(function(){
+  	$('.sprite').fadeIn();
+  	
+  });
+  $('#portrait').click(function(){
+  	$('.portrait').fadeIn();
+  	
+  })
+  /* $('#toggleMenu').click(function(){
+		openLeftSide();
+  	
+  })*/
+   $('.categories').click(function(){
+   	openLeftSide();
+   	stopAllJplayers();
+  })
+  $('#michael').click(function(){
+   	$('.initialHide').fadeOut();
+   	$('#michaelMusic').fadeIn();
+	  //closeAnyRightSidr();
+	  });
+	   $('#michael').click(function(){
+   	$('.initialHide').fadeOut();
+   	$('#mainCharPortraits').fadeIn();
+	  
+	  });
+});
+</script>
+<script id="jPlayersInstantiation">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/episodeMedia/peacefulvillage.m4a",
+			ogg: "http://www.snesexplainseverything.com/episodeMedia/peacefulvillage.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, ogg",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+      });
+	   $("#jquery_jplayer_2").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/ominous.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/ominous.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_2",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+      });
+	   $("#jquery_jplayer_3").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/Bad guy.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/Bad guy.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_3",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+		});
+	 $("#jquery_jplayer_4").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/snow.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/snow.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_4",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+		});
+	 $("#jquery_jplayer_5").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/cave.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/cave.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_5",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+		});
+		$("#jquery_jplayer_6").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/journey.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/journey.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_6",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+		});
+	  $("#jquery_jplayer_7").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            m4a: "http://www.snesexplainseverything.com/songRef/star.m4a",
+			ogg: "http://www.snesexplainseverything.com/songRef/star.ogg"
+
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a,ogg",
+		cssSelectorAncestor: "#jp_container_7",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+		});
+   	$('.initialHide').hide();
+   	//$('#toggleMenu').hide();
+	
+    });
+  </script>
+
+ </head>
+<body>
+<div id="sidr-left">
+  <!-- Your content -->
+  <ul>
+    <li><a id="right-menu-art" href="#right-menu-art">Art</a></li>
+    <li><a id="right-menu-music" href="#right-menu-music">Music</a></li>
+    <li><a id="right-menu-etc" href="#right-menu-etc">etc.</a></li>
+  </ul>
+</div>
+ 
+<div id="sidr-right-art">
+  <!-- Your content -->
+  <ul>
+    <li class="active categories"><a href="#">Categories</a></li>
+    <li id="sprites"><a href="#">Sprites</a></li>
+    <li id="portraits"><a href="#">Portraits</a></li>
+    <li><a href="#">Maps/World layout</a></li>
+  </ul>
+</div>
+<div id="sidr-right-music">
+  <!-- Your content -->
+  <ul>
+  	<li class="active categories"><a href="#">Categories</a></li>
+    <li><a id="michael" href="#">Michael Anderson</a></li>
+    <li><a href="#">Music For Video Games</a></li>
+    <!--<li><a href="#">Open Game Project</a></li>-->
+  </ul>
+</div>
+<div id="sidr-right-etc">
+  <!-- Your content -->
+  <ul>
+  	<li class="active categories"><a href="#">Categories</a></li>
+    <li><a href="#">etc 1</a></li>
+    <li><a href="#">etc 2</a></li>
+    <li><a href="#">etc 3</a></li>
+  </ul>
+</div>
+<!-- end of Menus -->
+<!-- Music related items -->
+<div id="mainCharPortraits" class="fotorama initialHide">
+	  <img src="justFaces/sara.png"></img>
+	  <img src="justFaces/steve.png"></img>
+	  <img src="justFaces/matt.png"></img>
+	  <img src="justFaces/brad.png"></img>
+	  
+</div>
+
+
+
+<div id="spriteData" class="sprite initialHide">
+Various resources, tiles and characters created, are generated from:
+<a href="http://www.tekepon.net/fsm">First Seed</a>
+The below is included per instructions on their website<br />
+<div id="firstSeedReadMe" class="sprite initialHide">
+<p>"Some (All) of graphic data in this software are free game resources distributed by <a href='http://www.tekepon.net/fsm'>REFMAP</a>.</p>
+<p>You must not use the graphic data which is in this software, for the purpose except playing this game. When you want to get these resources, go to the website above."</p>
+
+</div>
+
+</div>
+<div id="portraitData" class="portrait initialHide">
+	
+	
+</div>
+
+<div id="michaelMusic" class="initialHide music">
+
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+  <div id="jp_container_1" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>Peaceful Village</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	
+	
+<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+  <div id="jp_container_2" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>Ominous</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	
+<div id="jquery_jplayer_3" class="jp-jplayer"></div>
+  <div id="jp_container_3" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>Bad Guy</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	
+<div id="jquery_jplayer_4" class="jp-jplayer"></div>
+  <div id="jp_container_4" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>Snow</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	
+	
+<div id="jquery_jplayer_5" class="jp-jplayer"></div>
+  <div id="jp_container_5" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>The Cave</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+  
+<div id="jquery_jplayer_6" class="jp-jplayer"></div>
+  <div id="jp_container_6" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>The Great Journey</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	<div id="jquery_jplayer_7" class="jp-jplayer"></div>
+  <div id="jp_container_7" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar"></div>
+          </div>
+        </div>
+        <div class="jp-volume-bar">
+          <div class="jp-volume-bar-value"></div>
+        </div>
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div>
+          <div class="jp-duration"></div>
+          <ul class="jp-toggles">
+            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="jp-title">
+        <ul>
+          <li>Starry Night</li>
+        </ul>
+      </div>
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+    </div>
+  </div>
+	
+</div>
+<div id="jonathanArt" class="initialHide portrait">
+	
+	
+	
+</div>
+
+</body>
+
+</html>
