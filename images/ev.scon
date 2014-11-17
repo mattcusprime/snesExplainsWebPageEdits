@@ -1,0 +1,140 @@
+{
+  "entity": [
+    {
+      "animation": [
+        {
+          "id": 0,
+          "length": 1000,
+          "mainline": {
+            "key": [
+              {
+                "bone_ref": [],
+                "id": 0,
+                "object_ref": [
+                  {
+                    "abs_a": 1,
+                    "abs_angle": 360,
+                    "abs_pivot_x": 0,
+                    "abs_pivot_y": 1,
+                    "abs_scale_x": 1,
+                    "abs_scale_y": 1,
+                    "abs_x": 0,
+                    "abs_y": 0,
+                    "file": 0,
+                    "folder": 0,
+                    "id": 0,
+                    "key": 0,
+                    "name": "evilChar_0037_Layer-60",
+                    "timeline": 0,
+                    "z_index": "0"
+                  }
+                ]
+              },
+              {
+                "bone_ref": [],
+                "id": 1,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 1,
+                    "timeline": 0,
+                    "z_index": "0"
+                  }
+                ],
+                "time": 489
+              },
+              {
+                "bone_ref": [],
+                "id": 2,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 2,
+                    "timeline": 0,
+                    "z_index": "0"
+                  }
+                ],
+                "time": 981
+              }
+            ]
+          },
+          "name": "NewAnimation",
+          "soundline": [],
+          "timeline": [
+            {
+              "id": 0,
+              "key": [
+                {
+                  "id": 0,
+                  "object": {
+                    "file": 0,
+                    "folder": 0
+                  },
+                  "spin": 0
+                },
+                {
+                  "id": 1,
+                  "object": {
+                    "file": 0,
+                    "folder": 0,
+                    "x": 3,
+                    "y": -75
+                  },
+                  "spin": 0,
+                  "time": 489
+                },
+                {
+                  "id": 2,
+                  "object": {
+                    "file": 0,
+                    "folder": 0,
+                    "x": -2.8884540117416826,
+                    "y": 2.2113502935420684
+                  },
+                  "spin": 0,
+                  "time": 981
+                }
+              ],
+              "name": "evilChar_0037_Layer-60",
+              "obj": 0
+            }
+          ]
+        }
+      ],
+      "character_map": [],
+      "id": 0,
+      "name": "entity_000",
+      "obj_info": [
+        {
+          "frames": [
+            {
+              "file": 0,
+              "folder": 0
+            }
+          ],
+          "name": "evilChar_0037_Layer-60",
+          "type": "sprite"
+        }
+      ]
+    }
+  ],
+  "folder": [
+    {
+      "file": [
+        {
+          "height": 32,
+          "id": 0,
+          "name": "Evil Characters/evilChar_0037_Layer-60.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 31
+        }
+      ],
+      "id": 0,
+      "name": "Evil Characters"
+    }
+  ],
+  "generator": "BrashMonkey Spriter",
+  "generator_version": "b6.1",
+  "scon_version": "1.0"
+}

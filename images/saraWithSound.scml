@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5.999992">
+    <folder id="0" name="Main Characters/Matt">
+        <file id="0" name="Main Characters/Matt/mouthOpen_0012_Layer-2.png" width="123" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Main Characters/Matt/13.png" width="30" height="32" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Main Characters/Matt/2.png" width="30" height="32" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="1" name="a few sounds">
+        <file id="0" name="a few sounds/kefka.wav" type="sound"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="NewAnimation" length="2002">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="200">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="396">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="590">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+                <key id="4" time="797">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                </key>
+                <key id="5" time="982">
+                    <object_ref id="0" timeline="0" key="5" z_index="0"/>
+                </key>
+                <key id="6" time="1220">
+                    <object_ref id="0" timeline="0" key="6" z_index="0"/>
+                </key>
+                <key id="7" time="1375">
+                    <object_ref id="0" timeline="0" key="7" z_index="0"/>
+                </key>
+                <key id="8" time="1571">
+                    <object_ref id="0" timeline="0" key="8" z_index="0"/>
+                </key>
+                <key id="9" time="1763">
+                    <object_ref id="0" timeline="0" key="9" z_index="0"/>
+                </key>
+                <key id="10" time="1959">
+                    <object_ref id="0" timeline="0" key="10" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="13">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="1" time="200" spin="0">
+                    <object folder="0" file="2" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="2" time="396" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="3" time="590" spin="0">
+                    <object folder="0" file="2" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="4" time="797" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="5" time="982" spin="0">
+                    <object folder="0" file="2" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="6" time="1220" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="7" time="1375" spin="0">
+                    <object folder="0" file="2" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="8" time="1571" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="9" time="1763" spin="0">
+                    <object folder="0" file="2" x="1.980198" y="-0.49505"/>
+                </key>
+                <key id="10" time="1959" spin="0">
+                    <object folder="0" file="1" x="1.980198" y="-0.49505"/>
+                </key>
+            </timeline>
+            <soundline id="0" name="kefka">
+                <key id="0" time="1">
+                    <object folder="1" file="0"/>
+                </key>
+            </soundline>
+        </animation>
+    </entity>
+</spriter_data>

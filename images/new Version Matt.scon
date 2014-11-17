@@ -1,0 +1,315 @@
+{
+  "entity": [
+    {
+      "animation": [
+        {
+          "id": 0,
+          "length": 1000,
+          "mainline": {
+            "key": [
+              {
+                "bone_ref": [],
+                "id": 0,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 0,
+                    "timeline": 0,
+                    "z_index": "0"
+                  },
+                  {
+                    "id": 1,
+                    "key": 0,
+                    "timeline": 1,
+                    "z_index": "1"
+                  }
+                ]
+              },
+              {
+                "bone_ref": [],
+                "id": 1,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 1,
+                    "timeline": 0,
+                    "z_index": "0"
+                  },
+                  {
+                    "id": 1,
+                    "key": 1,
+                    "timeline": 1,
+                    "z_index": "1"
+                  }
+                ],
+                "time": 306
+              },
+              {
+                "bone_ref": [],
+                "id": 2,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 2,
+                    "timeline": 0,
+                    "z_index": "0"
+                  },
+                  {
+                    "id": 1,
+                    "key": 2,
+                    "timeline": 1,
+                    "z_index": "1"
+                  }
+                ],
+                "time": 590
+              },
+              {
+                "bone_ref": [],
+                "id": 3,
+                "object_ref": [
+                  {
+                    "id": 0,
+                    "key": 2,
+                    "timeline": 0,
+                    "z_index": "0"
+                  },
+                  {
+                    "id": 1,
+                    "key": 3,
+                    "timeline": 1,
+                    "z_index": "1"
+                  }
+                ],
+                "time": 795
+              }
+            ]
+          },
+          "name": "NewAnimation",
+          "timeline": [
+            {
+              "id": 0,
+              "key": [
+                {
+                  "id": 0,
+                  "object": {
+                    "file": 0,
+                    "folder": 1,
+                    "x": -13.77245508982036,
+                    "y": 16.167664670658684
+                  },
+                  "spin": 0
+                },
+                {
+                  "id": 1,
+                  "object": {
+                    "file": 0,
+                    "folder": 1,
+                    "x": -11.045182362547633,
+                    "y": 16.167664670658684
+                  },
+                  "spin": 0,
+                  "time": 306
+                },
+                {
+                  "id": 2,
+                  "object": {
+                    "file": 0,
+                    "folder": 1,
+                    "x": -14.585484519564488,
+                    "y": 17.379785882779895
+                  },
+                  "spin": 0,
+                  "time": 590
+                }
+              ],
+              "name": "Matt_0006_Layer-6"
+            },
+            {
+              "id": 1,
+              "key": [
+                {
+                  "id": 0,
+                  "object": {
+                    "angle": 69.67844159309243,
+                    "file": 6,
+                    "folder": 0,
+                    "scale_x": 0.5865800865800866,
+                    "scale_y": 0.6642743221690594,
+                    "x": 1.3084415584415572,
+                    "y": -8.013955342902701
+                  },
+                  "spin": -1
+                },
+                {
+                  "id": 1,
+                  "object": {
+                    "angle": 30.132439782991128,
+                    "file": 7,
+                    "folder": 0,
+                    "scale_x": 0.5865800865800868,
+                    "scale_y": 0.6642743221690594,
+                    "x": -10.50974025974026,
+                    "y": -3.468500797448158
+                  },
+                  "spin": -1,
+                  "time": 306
+                },
+                {
+                  "id": 2,
+                  "object": {
+                    "angle": 27.494624428839302,
+                    "file": 8,
+                    "folder": 0,
+                    "scale_x": 0.5865800865800868,
+                    "scale_y": 0.6642743221690592,
+                    "x": -35.976511720748015,
+                    "y": 6.792611769139903
+                  },
+                  "spin": -1,
+                  "time": 590
+                },
+                {
+                  "id": 3,
+                  "object": {
+                    "angle": 11.23524930086262,
+                    "file": 9,
+                    "folder": 0,
+                    "scale_x": 0.5865800865800868,
+                    "scale_y": 0.6642743221690592,
+                    "x": -42.48555023266839,
+                    "y": 25.14690397069436
+                  },
+                  "time": 795
+                }
+              ],
+              "name": "sword_0002_hilt"
+            }
+          ]
+        }
+      ],
+      "character_map": [],
+      "id": 0,
+      "name": "entity_000",
+      "obj_info": []
+    }
+  ],
+  "folder": [
+    {
+      "file": [
+        {
+          "height": 64,
+          "id": 0,
+          "name": "Sprite Bones/Weapons/Weapon02.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 64
+        },
+        {
+          "height": 64,
+          "id": 1,
+          "name": "Sprite Bones/Weapons/Weapon01.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 64
+        },
+        {
+          "height": 64,
+          "id": 2,
+          "name": "Sprite Bones/Weapons/Weapon03.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 64
+        },
+        {
+          "height": 64,
+          "id": 3,
+          "name": "Sprite Bones/Weapons/Weapon04.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 64
+        },
+        {
+          "height": 64,
+          "id": 4,
+          "name": "Sprite Bones/Weapons/Weapon05.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 64
+        },
+        {
+          "height": 64,
+          "id": 5,
+          "name": "Sprite Bones/Weapons/Weapon06.png",
+          "pivot_x": 1,
+          "pivot_y": 0,
+          "width": 64
+        },
+        {
+          "height": 18,
+          "id": 6,
+          "name": "Sprite Bones/Weapons/swordUnsheathing/sword_0002_hilt.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 20
+        },
+        {
+          "height": 24,
+          "id": 7,
+          "name": "Sprite Bones/Weapons/swordUnsheathing/sword_0001_partUnsheathed.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 25
+        },
+        {
+          "height": 48,
+          "id": 8,
+          "name": "Sprite Bones/Weapons/swordUnsheathing/sword_0000_mostlyUnsheathed.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 49
+        },
+        {
+          "height": 62,
+          "id": 9,
+          "name": "Sprite Bones/Weapons/swordUnsheathing/sword_0003_full-Sword.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 60
+        }
+      ],
+      "id": 0,
+      "name": "Sprite Bones/Weapons"
+    },
+    {
+      "file": [
+        {
+          "height": 31,
+          "id": 0,
+          "name": "Main Characters/Matt/Matt_0006_Layer-6.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 26
+        }
+      ],
+      "id": 1,
+      "name": "Main Characters/Matt"
+    },
+    {
+      "file": [
+        {
+          "height": 78,
+          "id": 0,
+          "name": "Sprite Bones/Full Sprites/Big-Monsters_0003_Layer-10.png",
+          "pivot_x": 0,
+          "pivot_y": 1,
+          "width": 77
+        }
+      ],
+      "id": 2,
+      "name": "Sprite Bones/Full Sprites"
+    }
+  ],
+  "generator": "BrashMonkey Spriter",
+  "generator_version": "b5.999991",
+  "scon_version": "1.0"
+}

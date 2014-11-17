@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0" name="Evil Characters">
+        <file id="0" name="Evil Characters/evilChar_0037_Layer-60.png" width="31" height="32" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="evilChar_0037_Layer-60" type="sprite">
+            <frames>
+                <i folder="0" file="0"/>
+            </frames>
+        </obj_info>
+        <animation id="0" name="NewAnimation" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="evilChar_0037_Layer-60" folder="0" file="0" abs_x="0" abs_y="0" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="489">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="981">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="evilChar_0037_Layer-60">
+                <key id="0" spin="0">
+                    <object folder="0" file="0"/>
+                </key>
+                <key id="1" time="489" spin="0">
+                    <object folder="0" file="0" x="3" y="-75"/>
+                </key>
+                <key id="2" time="981" spin="0">
+                    <object folder="0" file="0" x="-2.888454" y="2.21135"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+    <folder id="0" name="Sprite Bones/Heads">
+        <file id="0" name="Sprite Bones/Heads/Head_0046_Layer-3.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Sprite Bones/Heads/Head_0045_Layer-4.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Sprite Bones/Heads/Head_0047_Layer-2.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Sprite Bones/Heads/Head_0044_Layer-5.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="Sprite Bones/Heads/Head_0043_Layer-6.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Sprite Bones/Heads/Head_0041_Layer-8.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="Sprite Bones/Heads/Head_0040_Layer-9.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="Sprite Bones/Heads/Head_0039_Layer-10.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="8" name="Sprite Bones/Heads/Head_0037_Layer-12.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+        <file id="9" name="Sprite Bones/Heads/Head_0042_Layer-7.png" width="21" height="20" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <folder id="1" name="Sprite Bones/Weapons">
+        <file id="0" name="Sprite Bones/Weapons/Weapon10.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Sprite Bones/Weapons/Weapon01.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Sprite Bones/Weapons/Weapon08.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Sprite Bones/Weapons/Weapon08sheathed.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="Sprite Bones/Weapons/Weapon08sheathed_tmp9067" width="64" height="64" pivot_x="0.727273" pivot_y="0.348485"/>
+    </folder>
+    <folder id="2" name="Main Characters/Andrew">
+        <file id="0" name="Main Characters/Andrew/Andrew_0001_Layer-12.png" width="27" height="32" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Main Characters/Andrew/Andrew_0000_Layer-13.png" width="25" height="31" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Main Characters/Andrew/Andrew_0002_Layer-11.png" width="25" height="31" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="NewAnimation" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="Andrew_0001_Layer-12" folder="2" file="0" abs_x="-14.826498" abs_y="16.719243" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="Weapon08" folder="1" file="4" abs_x="-2.555088" abs_y="-6.178884" abs_pivot_x="0.727273" abs_pivot_y="0.348485" abs_angle="318.107134" abs_scale_x="0.381388" abs_scale_y="0.351686" abs_a="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="490">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="826">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="984">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Andrew_0001_Layer-12">
+                <key id="0" spin="0">
+                    <object folder="2" file="0" x="-14.826498" y="16.719243"/>
+                </key>
+                <key id="1" time="490" spin="0">
+                    <object folder="2" file="0" x="-14.826498" y="16.719243"/>
+                </key>
+                <key id="2" time="826" spin="0">
+                    <object folder="2" file="2" x="-15.022962" y="16.915707"/>
+                </key>
+                <key id="3" time="984" spin="0">
+                    <object folder="2" file="0" x="-14.844564" y="16.737309"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Weapon08">
+                <key id="0">
+                    <object folder="1" file="4" x="-2.555088" y="-6.178884" angle="318.107134" scale_x="0.381388" scale_y="0.351686"/>
+                </key>
+                <key id="1" time="490" spin="-1">
+                    <object folder="1" file="4" x="-2.055776" y="-4.94962" angle="319.277433" scale_x="0.381388" scale_y="0.351686"/>
+                </key>
+                <key id="2" time="826">
+                    <object folder="1" file="4" x="-2.384734" y="-5.759488" angle="299.628157" scale_x="0.381388" scale_y="0.351686"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
