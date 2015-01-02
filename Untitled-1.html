@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://db.tt/Hry2YIjp">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    <script src="bootstrap.min.js"></script>
-    <script>
+    <!--<script>
     function laugh(x) {
         if (x.src="images/HeadButtons/MattHeadButton.png") {
         x.src="images/HeadButtons/OVER_MattHeadButton.png";
@@ -26,6 +26,33 @@
             x.src="images/HeadButtons/SenHeadButton.png";
     }
     }
+    </script>-->
+    
+    <script>
+      function mouseIsOverMe(){
+        var myImage = $(this).attr('src');
+        if(myImage == 'images/HeadButtons/MattHeadButton.png'){
+          $(this).attr('src','images/HeadButtons/OVER_MattHeadButton.png')
+        }
+        else if(myImage == 'images/HeadButtons/SenHeadButton.png'){
+          $(this).attr('src','images/HeadButtons/OVER_SenHeadButton.png')
+        };
+        
+      };
+      function mouseIsNotOverMe(){
+         var myImage = $(this).attr('src');
+        if(myImage == 'images/HeadButtons/OVER_MattHeadButton.png'){
+          $(this).attr('src','images/HeadButtons/MattHeadButton.png')
+        }
+        else if(myImage == 'images/HeadButtons/OVER_SenHeadButton.png'){
+          $(this).attr('src','images/HeadButtons/SenHeadButton.png')
+        };
+      };
+      $('document').ready(function(){
+          $('img.swap').mouseenter( mouseIsOverMe ).mouseleave( mouseIsNotOverMe );
+        
+      });
+      
     </script>
 </head>
 
@@ -63,17 +90,17 @@
     <div class="row">
         <div class="col-xs-3"></div>
         <div class="col-xs-1">
-        <img onmouseover="laugh(this)" onmouseout="normal(this)" style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"></div>
+        <img class="swap" style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"></div>
          <div class="col-xs-1">
-        <img onmouseover="laugh(this)" onmouseout="normal(this)" style="margin:auto;display:block;" src="images/HeadButtons/SenHeadButton.png"></div>
+        <img class="swap"  style="margin:auto;display:block;" src="images/HeadButtons/SenHeadButton.png"></div>
          <div class="col-xs-1">
-        <img style="margin:auto;display:block;" src="images/HeadButtons/DroxHeadButton.png"><p style="color:#336699;text-align:center">ABOUT</p></div>
+        <img class="swap"  style="margin:auto;display:block;" src="images/HeadButtons/DroxHeadButton.png"><p style="color:#336699;text-align:center">ABOUT</p></div>
         <div class="col-xs-1">
-        <img style="margin:auto;display:block;" src="images/HeadButtons/BradHeadButton.png"><p style="color:#336699;text-align:center">CREDITS</p></div>
+        <img class="swap"  style="margin:auto;display:block;" src="images/HeadButtons/BradHeadButton.png"><p style="color:#336699;text-align:center">CREDITS</p></div>
         <div  class="col-xs-1">
-        <img style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"><p style="color:#336699;text-align:center">APP</p></div>
+        <img class="swap"  style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"><p style="color:#336699;text-align:center">APP</p></div>
         <div  class="col-xs-1">
-        <img style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"><p style="color:#336699;text-align:center">SHARE</p></div>
+        <img class="swap"  style="margin:auto;display:block;" src="images/HeadButtons/MattHeadButton.png"><p style="color:#336699;text-align:center">SHARE</p></div>
         
         <div class="col-xs-3"></div>
         </div>
